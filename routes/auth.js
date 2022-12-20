@@ -27,7 +27,7 @@ function validate(req) {
   });
 
   // return Joi.validate(req, schema);
-  return schema.validate(auth);
+  return schema.validate(req);
 }
 
 module.exports = router;
